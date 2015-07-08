@@ -10,14 +10,16 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Story of Ton" startnode="1" creator="Twine" creator-version="2.0.6" ifid="EA96C9C9-ED09-40BF-AC3C-82F5B34C8F6E" format="Harlowe" options=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="restart" tags="" position="70,16.666666666666668">&lt;img src=&quot;http://imglf2.nosdn.127.net/img/d200OVBRZmZiMjRuQ2ZtK3RPOHp0LzdRbS8rMWdYL1k.png?imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&quot; width=&quot;400&quot; height=&quot;500&quot; 
-This is [[you]].Your name is Ton.</tw-passagedata><tw-passagedata pid="2" name="you" tags="" position="70,166.66666666666669">Sadly, you were the son of a poor farmer, and, your childhood was all sadness because you had a unquiet home. One day, after seeing your father get drunk again, you decided to go to a tourney in the city for the award for the winner. You only had a wooden sword made by yourself. There was a forest on the road to the city.
+<tw-storydata name="Story of Ton" startnode="1" creator="Twine" creator-version="2.0.6" ifid="EA96C9C9-ED09-40BF-AC3C-82F5B34C8F6E" format="Harlowe" options=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="restart" tags="" position="70,16">&lt;img src=&quot;http://imglf2.nosdn.127.net/img/d200OVBRZmZiMjRuQ2ZtK3RPOHp0LzdRbS8rMWdYL1k.png?imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&quot; width=&quot;400&quot; height=&quot;500&quot; 
+This is [[you]].Your name is Ton.</tw-passagedata><tw-passagedata pid="2" name="you" tags="" position="70,166">Sadly, you were the son of a poor farmer, and, your childhood was all sadness because you had a unquiet home. One day, after seeing your father get drunk again, you decided to go to a tourney in the city for the award for the winner. You only had a wooden sword made by yourself. There was a forest on the road to the city.
 [[You would walk through the forest.]]
 [[You were afraid of the danger so you would take a safer route.]] 
-</tw-passagedata><tw-passagedata pid="3" name="You would walk through the forest." tags="" position="236.66666666666669,155">(set: $hp to 10) (set: $monster_hp to 3)
-You&#x27;ve met a boar. It seems to be aggressive. Your health is $hp. Your wooden sword deals 1 damage when it attacks. The boar&#x27;s health is $monster_hp.
+</tw-passagedata><tw-passagedata pid="3" name="You would walk through the forest." tags="" position="236,155">(set: $hp to 10) (set: $monster_hp to 3)
+You met a boar. It seemed to be aggressive. Your health is $hp. Your wooden sword deals 1 damage when it attacks. The boar&#x27;s health is $monster_hp.
 [[fight]] 
-[[flee]]</tw-passagedata><tw-passagedata pid="4" name="You were afraid of the danger so you would take a safer route." tags="" position="226.66666666666669,30">You were robbed by a bad guy and killed.
+[[flee]]</tw-passagedata><tw-passagedata pid="4" name="You were afraid of the danger so you would take a safer route." tags="" position="226,30">You were robbed by a bad guy and killed.
 [[restart]]</tw-passagedata><tw-passagedata pid="5" name="fight" tags="" position="60,310">(if: (either: 0, 1) is 0)[  
   The boar knocked you down. You got up with all your strength and staggered. 
   (set: $hp to $hp - (either: 1,2,3))  
@@ -34,50 +36,51 @@ You&#x27;ve met a boar. It seems to be aggressive. Your health is $hp. Your wood
     Its health is $monster_hp.
     [[fight]] 
     [[flee|flee]] ]  
-]</tw-passagedata><tw-passagedata pid="6" name="flee" tags="" position="250,305">Unfortunately, you&#x27;re not a good athlete. The boar catches you.
-[[fight]]</tw-passagedata><tw-passagedata pid="7" name="monster is dead" tags="" position="50,447">Your wooden sword broke because of the impact. You fetched a branch as a sword and went on. Now the sky is darkening.
+]</tw-passagedata><tw-passagedata pid="6" name="flee" tags="" position="250,305">Unfortunately, you were not a good athlete. The boar catched you.
+[[fight]]</tw-passagedata><tw-passagedata pid="7" name="monster is dead" tags="" position="50,447">Your wooden sword broke because of the impact. You fetched a branch as a sword and went on. The sky was darkening.
 [[rest]]
 [[go on]]</tw-passagedata><tw-passagedata pid="8" name="rest" tags="" position="42,595">(set: $hp to 10) 
-You feel refreshed. 
+You felt refreshed. 
 [[keep walking]]</tw-passagedata><tw-passagedata pid="9" name="go on" tags="" position="198,431">You were killed by a wandering dark elf.
 [[restart]]</tw-passagedata><tw-passagedata pid="10" name="keep walking" tags="" position="175,556">You got out of the forest!
 [[go to the tourney]]</tw-passagedata><tw-passagedata pid="11" name="go to the tourney" tags="" position="301,556">The audience looked at you suspiciously. You brandished your branch and tried to calm down. Suddenly, someone roared at you. You saw a muscular guy with a huge sword in his hand.
 &lt;img src=&quot;http://imglf0.nosdn.127.net/img/d200OVBRZmZiMjRuQ2ZtK3RPOHp0NzBabnZYb1JxTWY.png?imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&quot; width=&quot;600&quot; height=&quot;500&quot;
 [[Ask him what&#x27;s the matter]]</tw-passagedata><tw-passagedata pid="12" name="Ask him what&#x27;s the matter" tags="" position="80,720">&quot;What? Don&#x27;t you know who I am? I&#x27;m the prince! I will surely be the winner of the tourney! What are you doing here?&quot;
-[[&quot;I am here to fight.&quot;]]</tw-passagedata><tw-passagedata pid="13" name="&quot;I am here to fight.&quot;" tags="" position="240,683.3333333333334">&quot;You? You gotta be kidding me! Well, show your lance!&quot; The prince put on his polished golden armor and grabbed a long lance as you pointed your branch at him. &quot;Har! That pigboy wants to fight with me with a branch! Give him a lance. I will teach him a lesson!&quot;
+[[&quot;I am here to fight.&quot;]]</tw-passagedata><tw-passagedata pid="13" name="&quot;I am here to fight.&quot;" tags="" position="240,683">&quot;You? You gotta be kidding me! Well, show your lance!&quot; The prince put on his polished golden armor and grabbed a long lance as you pointed your branch at him. &quot;Har! That pigboy wants to fight with me with a branch! Give him a lance. I will teach him a lesson!&quot;
 Pick a horse and [[DEFEAT HIM!!!]]</tw-passagedata><tw-passagedata pid="14" name="Flee embarrassly" tags="" position="0,815">&quot;Loser!&quot; The prince yelled at you. You sense anger rising in you.
 &quot;No. I will try again!&quot;
-[[DEFEAT HIM!!!]] </tw-passagedata><tw-passagedata pid="15" name="Celebrate your victory" tags="" position="295,846.6666666666667">The prince knocked you down while you are hooting. &quot;You lose.&quot; He said with malice. Then he turned to the audience,&quot; Who won?&quot;No one answered. He repeatedangrily, then the crowd cried,&quot; The prince! The prince!&quot;
+[[DEFEAT HIM!!!]] </tw-passagedata><tw-passagedata pid="15" name="Celebrate your victory" tags="" position="295,846">The prince knocked you down while you are hooting. &quot;You lose.&quot; He said with malice. Then he turned to the audience,&quot; Who won?&quot;No one answered. He repeated angrily, then the crowd cried,&quot; The prince! The prince!&quot;
 [[Leave angrily]]
-[[Call the prince a liar]]</tw-passagedata><tw-passagedata pid="16" name="DEFEAT HIM!!!" tags="" position="151.66696666666667,845">(if: (either: 0, 1) is 0)[  
+[[Call the prince a liar]]</tw-passagedata><tw-passagedata pid="16" name="DEFEAT HIM!!!" tags="" position="151,845">(if: (either: 0, 1) is 0)[  
   The prince unhorsed you! 
     [[Flee embarrassly]]   
 ]
 (else:)[ You unhorsed the prince! 
     [[Celebrate your victory]] 
-]</tw-passagedata><tw-passagedata pid="17" name="Leave angrily" tags="" position="293.33333333333337,998.3333333333334">On your way back to the woods, you saw a hut.
+]</tw-passagedata><tw-passagedata pid="17" name="Leave angrily" tags="" position="293,998">On your way back to the woods, you saw a hut.
 [[Push the door.]]
 [[Go home.]]</tw-passagedata><tw-passagedata pid="18" name="Call the prince a liar" tags="" position="365,681">The prince went mad and told his guards to take you to the dungeon. However, you met an old man in the dungeon who held a weird staff that was glowering.
-[[Chat with him]]</tw-passagedata><tw-passagedata pid="19" name="Chat with him" tags="" position="386.6666666666667,430">The old man said,&quot; I&#x27;m a wizard, as it happens. I saw your experience today in my dreams. Do you want to make a deal?&quot;
-[[&quot;What deal?&quot;]]</tw-passagedata><tw-passagedata pid="20" name="Push the door." tags="" position="293.33333333333337,1148.3333333333335">You saw a witch. She asked you wickedly,&quot; Child, I know you are upset, do you want to exchange something with me?&quot;
-[[You got curious and asked her to go on.]]</tw-passagedata><tw-passagedata pid="21" name="Go home." tags="" position="136.66666666666669,975">Now you knew there was injustice in this world. You were disappointed of the cruel life. You lived a normal and upset life, never having passion. One day, you died when hunting.</tw-passagedata><tw-passagedata pid="22" name="You got curious and asked her to go on." tags="" position="431.6666666666667,1045">&quot;You will be the new prince and the old prince will be you, a farmer&#x27;s son. As the  cost of performing the magic, you must give up something----that is, you can only stay in your castle, never to come out.&quot;
+[[Chat with him]]</tw-passagedata><tw-passagedata pid="19" name="Chat with him" tags="" position="386,430">The old man said,&quot; I&#x27;m a wizard, as it happens. I saw your experience today in my dreams. Do you want to make a deal?&quot;
+[[&quot;What deal?&quot;]]</tw-passagedata><tw-passagedata pid="20" name="Push the door." tags="" position="293,1148">You saw a witch. She asked you wickedly,&quot; Child, I know you are upset, do you want to exchange something with me?&quot;
+[[You got curious and asked her to go on.]]</tw-passagedata><tw-passagedata pid="21" name="Go home." tags="" position="136,975">Now you knew there was injustice in this world. You were disappointed of the cruel life. You lived a normal and upset life, never having passion. One day, you died when hunting.</tw-passagedata><tw-passagedata pid="22" name="You got curious and asked her to go on." tags="" position="431,1045">&quot;You will be the new prince and the old prince will be you, a farmer&#x27;s son. As the  cost of performing the magic, you must give up something----that is, you can only stay in your castle, never to come out.&quot;
 [[&quot;yes!&quot;]] 
 [[&quot;no!&quot;]]
-</tw-passagedata><tw-passagedata pid="23" name="&quot;What deal?&quot;" tags="" position="505,578.3333333333334">&quot;You will be the new prince and the old prince will be you, a farmer&#x27;s son. As the  cost of performing the magic, you must give up your health----that is, you can only live twenty more years.&quot;
+</tw-passagedata><tw-passagedata pid="23" name="&quot;What deal?&quot;" tags="" position="505,578">&quot;You will be the new prince and the old prince will be you, a farmer&#x27;s son. As the  cost of performing the magic, you must give up your health----that is, you can only live twenty more years.&quot;
 [[&quot;yes!&quot;]]
 [[&quot;no!&quot;]]</tw-passagedata><tw-passagedata pid="24" name="&quot;yes!&quot;" tags="" position="590,985">A light appeared, and you found yourself in a magnificent castle. A servant came and greeted you,&quot; My prince. your breakfast is ready.&quot; 
 That&#x27;s how &quot;princeton&quot; came. Of course I&#x27;m kidding. But you lived happily with your princess, though somehow you just couldn&#x27;t go out of the castle door.
-The end.</tw-passagedata><tw-passagedata pid="25" name="&quot;no!&quot;" tags="" position="545,371.6666666666667">&quot;Great! Freedom is better than money or power. This world may be injustice, but you have to be yourself. Now go and rescue the princess.&quot; You got confused. But when you blinked your eye, you found yourself on an island with a castle towering above the woods. In front of you a sword was fixed in a stone scabbard.
-[[Pull out the sword.]]</tw-passagedata><tw-passagedata pid="26" name="Pull out the sword." tags="" position="475,88.33333333333334">[[Pull]]</tw-passagedata><tw-passagedata pid="27" name="Pull" tags="" position="628.3333333333334,53.333333333333336">It came out a little.
-[[Pull!]]</tw-passagedata><tw-passagedata pid="28" name="Pull!" tags="" position="656.6666666666667,230">A few more inches!
+The end.</tw-passagedata><tw-passagedata pid="25" name="&quot;no!&quot;" tags="" position="545,371">&quot;Great! Freedom is better than money or power. This world may be injustice, but you have to be yourself. Now go and rescue the princess.&quot; You got confused. But when you blinked your eye, you found yourself on an island with a castle towering above the woods. In front of you a sword was fixed in a stone scabbard.
+[[Pull out the sword.]]</tw-passagedata><tw-passagedata pid="26" name="Pull out the sword." tags="" position="475,88">It was a magnificent sword.
+[[Pull]]</tw-passagedata><tw-passagedata pid="27" name="Pull" tags="" position="628,53">It came out a little.
+[[Pull!]]</tw-passagedata><tw-passagedata pid="28" name="Pull!" tags="" position="656,230">A few more inches!
 [[Pull!!]]</tw-passagedata><tw-passagedata pid="29" name="Pull!!" tags="" position="670,445">Just pull it one more time!
-[[Pull!!!]]</tw-passagedata><tw-passagedata pid="30" name="Pull!!!" tags="" position="781.6666666666667,223.33333333333334">Yes! A mithril sword was now in your grip.
-[[Go into the castle!!]]</tw-passagedata><tw-passagedata pid="31" name="Go into the castle!!" tags="" position="661.6666666666667,615">&lt;img src=&quot;http://imglf2.nosdn.127.net/img/d200OVBRZmZiMjVuM1R6c1VkZnA3NGRRbnVaWFdtc1M.png?imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&quot; width=&quot;400&quot; height=&quot;300&quot; 
-A dragon is in front of you.
-[[Fight!!]]</tw-passagedata><tw-passagedata pid="32" name="Fight!!" tags="" position="825,508.33333333333337">(set: $dragon_hp to 10000) (set: $hp to 10)
+[[Pull!!!]]</tw-passagedata><tw-passagedata pid="30" name="Pull!!!" tags="" position="781,223">Yes! A mithril sword was now in your grip.
+[[Go into the castle!!]]</tw-passagedata><tw-passagedata pid="31" name="Go into the castle!!" tags="" position="661,615">&lt;img src=&quot;http://imglf2.nosdn.127.net/img/d200OVBRZmZiMjVuM1R6c1VkZnA3NGRRbnVaWFdtc1M.png?imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&quot; width=&quot;400&quot; height=&quot;300&quot; 
+A dragon was in front of you.
+[[Fight!!]]</tw-passagedata><tw-passagedata pid="32" name="Fight!!" tags="" position="825,508">(set: $dragon_hp to 10000) (set: $hp to 10)
 The dragon has $dragon_hp health. But your mithril sword has mysterious runes on it that can deal the dragon a lot of damage.
-[[Poke the dragon.]]</tw-passagedata><tw-passagedata pid="33" name="Poke the dragon." tags="" position="663.3333333333334,761.6666666666667">(if: (either: 0, 1) is 0)[  
-  The dragon burns you! 
+[[Poke the dragon.]]</tw-passagedata><tw-passagedata pid="33" name="Poke the dragon." tags="" position="663,761">(if: (either: 0, 1) is 0)[  
+  The dragon burnt you! 
   (set: $hp to $hp - (either: 1,5,9))  
   (if: $hp &lt; 1)[ You are dead![[...]] ]  
   (else:)[ Your health is $hp. 
@@ -89,9 +92,9 @@ The dragon has $dragon_hp health. But your mithril sword has mysterious runes on
   (else:)[    
     Its health is $dragon_hp.
     [[Poke the dragon.]]  ]  
-]</tw-passagedata><tw-passagedata pid="34" name="..." tags="" position="430,821.6666666666667">(set: $hp to 10)
+]</tw-passagedata><tw-passagedata pid="34" name="..." tags="" position="430,821">(set: $hp to 10)
 Thanks to the healing power of the princess, you resurrected! Fight again!
-[[Poke the dragon.]]</tw-passagedata><tw-passagedata pid="35" name="dragon is dead" tags="" position="765,938.3333333333334">You won the princess&#x27; heart because of your gallantry! You also terminated the evil dragon that haunted the kingdom for centuries. The king was so happy that he married the beautiful princess to you! You and the princess lived happily ever after!
+[[Poke the dragon.]]</tw-passagedata><tw-passagedata pid="35" name="dragon is dead" tags="" position="765,938">You won the princess&#x27; heart because of your gallantry! You also terminated the evil dragon that haunted the kingdom for centuries. The king was so happy that he married the beautiful princess to you! You and the princess lived happily ever after!
 The end.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">/**
